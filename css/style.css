@@ -110,3 +110,9 @@ img {
   background-size: 100%, 50rem;
   
 }
+
+.sobre-nosotros-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr
+  );
+}
