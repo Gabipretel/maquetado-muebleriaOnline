@@ -41,7 +41,7 @@ img {
 }
 
 .contenedor-nav {
-  border-top: 1px solid rgb(0, 0, 0, 0.5);
+  border-top: 1px solid #e1e1e1
 }
 .nav-principal {
   padding: 1.25rem 0;
@@ -100,19 +100,147 @@ img {
 }
 
 .sobre-nosotros{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
   background-image: linear-gradient(to right, transparent 50%, #72a6e5 50%, #72a6e5 100%),
   url("../img/nosotros.jpg");
   padding: 100px 0 100px 0;
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 100%, 50rem;
+  background-size: 100%, 60rem
   
 }
 
 .sobre-nosotros-grid{
+  color: #fff;
   display: grid;
-  grid-template-columns: repeat(2, 1fr
-  );
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40rem;
+}
+.texto-nosotros{
+  grid-column: 2 /3;
+}
+
+/* .sobre-nosotros-grid{
+  display: flex;
+  justify-content: flex-end;
+}
+.texto-nosotros h2{
+  flex-basis: 50%;
+  padding-left: 40rem;
+} */
+.nuestros-productos{
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.lista-productos{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+.producto:nth-child(1){
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  
+}
+.producto:nth-child(1) img{
+  height: 28.2rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.producto:nth-child(2){
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.producto:nth-child(3){
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+
+.producto:nth-child(2) img , .producto:nth-child(3) img{
+  height:18.75rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.producto:nth-child(4){
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.producto:nth-child(5){
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.producto:nth-child(6){
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.producto{
+  color: #fff;
+  background-color: #72a6e5;  
+  margin-bottom: 30px;
+
+}
+
+.texto-producto{
+  text-align: center;
+  padding: 2rem;
+}
+.texto-producto h3{
+  margin: 0;
+}
+.texto-producto p{
+  margin: 0 0 5px 0;
+}
+.precio{
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+
+.btn{
+  background-color: #8cbc00;
+  color: #fff;
+  font-weight: 900;
+  display: block;
+  text-transform: uppercase;
+  padding: 0.625rem;
+  transition: background-color .3s ease-out;
+}
+.btn:hover{
+  background-color:#769c02 ;
+}
+
+
+.sitio-footer{
+  border-top: 1px solid #e1e1e1;
+  margin-top:50px;
+  padding-top: 50px;
+}
+
+
+.grid-footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20rem;
+} 
+
+.nav-footer a{
+  display: block;
+}
+
+.derechos-reservados{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 60px;
+
 }
