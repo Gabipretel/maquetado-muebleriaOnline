@@ -313,3 +313,20 @@ padding: 10px;
   width: 600px;
   margin: 0 auto;
 }
+
+/* Galeria */
+.galeria{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr
+  );
+  gap: 2rem;
+}
+
+.galeria img{
+  height: 21.875rem;
+  width: 21.875rem;
+  object-fit: cover;
+}
