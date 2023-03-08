@@ -1,12 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos</title>
-</head>
-<body>
-    <p>Contactanos</p>
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Raleway:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>La Muebleria Online</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="nombre-sitio">La Muebleria <span>Online</span></h1>
+    </header>
+
+    <div class="contenedor-nav">
+      <nav class="nav-principal contenedor">
+        <a href="/pages/index.html">Inicio</a>
+        <a href="/pages/nosotros.html">Nosotros</a>
+        <a href="/pages/tienda.html">Tienda</a>
+        <a href="/pages/blog.html">Blog</a>
+        <a href="/pages/galeria.html">Galeria</a>
+        <a href="/pages/contactanos.html">Contactanos</a>
+      </nav>
+    </div>
+
+    <main class="contenido-principal contenedor">
+      <h2 class="nuestros-productos">Contacto</h2>
+      <form>
+
+        <fieldset>
+          <legend>Tus Datos</legend>
+          <div class="campos"> 
+            <label for="nombre">Nombre :</label>
+            <input id="nombre" type="text" placeholder="Escribe tu nombre" required>
+          </div>
+          <div class="campos">
+            <label for="asunto">Asunto :</label>
+            <input id="asunto" type="text" placeholder="Escribe tu asunto" required>
+          </div>
+          <div class="campos">
+            <label for="email">Email :</label>
+            <input id="email" type="email" placeholder="Escribe tu email" required>
+          </div>
+          <div class="campos">
+            <label for="tel">Telefono :</label>
+            <input id="tel" type="tel" placeholder="Escribe tu telefono" required>
+          </div>
+          <div class="campos">
+            <label for="msj">Mensaje :</label>
+            <textarea id="msj" cols="30" rows="10" required></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Pais</legend>
+          <div class="campos"> 
+            <label for="pais">Pais</label>
+            <select id="pais" >
+              <option selected disabled>--Selecciona--</option>
+              <option >Argentina</option>
+              <option >Brasil</option>
+              <option >Chile</option>
+              <option >Uruguay</option>
+              <option >Bolivia</option>
+            </select>
+           
+        </fieldset>
+
+        <fieldset>
+          <legend>Información extra</legend>
+          <div class="campos"> 
+            <label for="cliente">Cliente </label>
+            <input id="cliente" type="radio" name="tipo" required >
+          </div>
+
+          <div class="campos"> 
+            <label for="proveedor">Proveedor </label>
+            <input id="proveedor" type="radio" name="tipo"  required>
+          </div>
+
+          <div class="campos">
+            <label for="categoria">Categorias de Interés</label>
+            <input list="categorias" name="categorias">
+            <datalist id="categorias">
+              <option value="Cocina">
+              <option value="Exterior">
+              <option value="Recamaras">
+              <option value="Oficina">
+              <option value="Televisión">
+            </datalist>
+          </div>
+        </fieldset>
+        <input type="submit" value="Enviar Formulario">
+      </form>
+
+    </main>
+
+    <footer class="sitio-footer">
+      <div class="grid-footer contenedor">
+        <div>
+          <h3>Categorias</h3>
+          <nav class="nav-footer">
+            <a href="#">Cocina</a>
+            <a href="#">Oficina</a>
+            <a href="#">Jardin</a>
+            <a href="#">Cochera</a>
+            <a href="#">Dormitorios</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3>Sobre Nosotros</h3>
+          <nav class="nav-footer">
+            <a href="#">Nuestra historia</a>
+            <a href="#">Misión,Visión y valores</a>
+            <a href="#">Carreras</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos de Servicio</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3>Soporte</h3>
+          <nav class="nav-footer">
+            <a href="#">Preguntas Frecuentes</a>
+            <a href="#">Ayda en Línea</a>
+            <a href="#">Confianza y Seguridad</a>
+          </nav>
+        </div>
+      </div>
+      <p class="derechos-reservados">Todos los derechos reservados La Muebleria Online</p>
+    </footer>
+  </body>
 </html>
